@@ -1,15 +1,17 @@
 var express = require('express');
 var app = express();
  
+app.use(express.static('public'))
+app.use('/admin', express.static('admin'))
+
+//app.get('/', function(req, res) {
  
-app.get('/', function(req, res) {
+   // res.send('Welcome to Assignment Manager');
+   // app.use('/admin', express.static('admin'))
  
-    res.send('Welcome to Assignment Manager');
-    app.use('/admin', express.static('admin'))
- 
-});
- 
- 
+//});
+
+
 app.listen(8080, function(err) {
  
     if (!err)
