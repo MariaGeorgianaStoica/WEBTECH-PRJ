@@ -14,7 +14,12 @@
     "type": "git",
     "url": "git+https://github.com/MariaGeorgianaStoica/WEBTECH-PRJ.git"
   },
-  "author": "",
+    "keywords": [
+    "RESTful",
+    "api",
+    "nodejs"
+  ],
+  "author": "stoicamariageorgiana",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/MariaGeorgianaStoica/WEBTECH-PRJ/issues"
