@@ -23,3 +23,8 @@ Create table 'evenimente'
 * mysql>use c9;
 * mysql>create table evenimente(denumire varchar(20, data DATE);
 * mysql> INSERT INTO evenimente (denumire, data) VALUES ('Sedinta HR','2017-06-15');
+
+Made 2 pages for mode admin and public.
+In server.js open index.html from each page
+* app.use(express.static('public'))
+* app.use('/admin', express.static('admin'))
