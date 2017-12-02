@@ -10,4 +10,16 @@ Set up the node js server and the package.json file
 * npm install express
 * npm init
 
+Set up host and port
 * create server.js
+
+Configure and install database in c9
+* npm i mysql -g
+Root User: georgiana16
+Database Name: c9
+* mysql-ctl start
+Create table 'evenimente'
+* mysql -u root
+* mysql>use c9;
+* mysql>create table evenimente(denumire varchar(20, data DATE);
+* mysql> INSERT INTO evenimente (denumire, data) VALUES ('Sedinta HR','2017-06-15');
