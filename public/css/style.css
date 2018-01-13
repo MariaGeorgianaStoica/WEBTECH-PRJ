@@ -7,11 +7,11 @@ body {
     font-family: 'robotoregular', Arial, Verdana, sans-serif;
 }
 h1,h2,h4,h5,h6,strong,b {
-    font-family: 'robotobold';
+    
     font-weight: normal;
 }
 em,i {
-    font-family: 'robotoitalic';
+   
     font-style: normal;
 }
 #container {
