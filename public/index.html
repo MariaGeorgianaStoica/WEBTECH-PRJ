@@ -32,6 +32,45 @@
                 Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan.
             </p>
         </section>
+        <div>
+   <div id="divTitle">  Order list: </div>
+   <br/>
+  
+    <table class="tabel2">
+        <tr ng-repeat="event in events" ng-include="getTemplate(event)">
+            <script type="text/ng-template" id="display">
+                <td>{{event.dataEveniment}}</td>
+                <td>{{event.detalii}}</td>
+                <td>{{event.numeUser}}</td>
+                <td>{{event.email}}</td>
+                <td>
+                    <input type="button" value="delete" ng-click="deleteEvent(event)"/>
+                    <input type="button" value="edit" ng-click="editEvent(event)"/>
+                    <a ui-sref="eventDetails({eventId : event.id})">details</a>
+                </td>
+            </script>
+            <script type="text/ng-template" id="edit">
+                <td><input type="text" ng-model="event.dataEveniment"/></td>
+                <td><input type="text" ng-model="event.detalii"/></td>
+                <td><input type="text" ng-model="event.numeUser"/></td>
+                <td><input type="text" ng-model="event.email"/></td>
+                <td><input type="button" value="save" ng-click="saveEvent(event)"/></td>
+            </script>
+        </tr>
+    </table>
+    </br>
+    </br>
+   
+    <form>
+       <label> Data eveniment : </label>  <input type="text" ng-model="event.dataEveniment"/><br />
+        <label> Detalii : </label> <input type="text" ng-model="event.detalii"/><br />
+       <label> Name : </label> <input type="text" ng-model="event.numeUser"/><br />
+       <label> Email : </label>  <input type="text" ng-model="event.email"/><br />
+       </br> </br>
+        <input type="button" id="btn1" value="Adauga" ng-click="addEvent(event)"/>
+    </form>
+</div>
+
        
     </main>
 
