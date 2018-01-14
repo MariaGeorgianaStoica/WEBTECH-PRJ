@@ -2,10 +2,10 @@ var app = angular.module('AssignmentManagerApp', [
         'ui.router',
         'eventController',
         'eventDetailsController'
-    ])
+    ]);
     
 app.config(function($stateProvider, $urlRouterProvider){
-    $urlRouterProvider.otherwise('/events')
+    $urlRouterProvider.otherwise('/events');
     $stateProvider
         .state('events',{
             url : '/events',
@@ -16,5 +16,5 @@ app.config(function($stateProvider, $urlRouterProvider){
             url : '/events/:descriereEventId',
             cale : 'public/index.html',
             controller : 'eventDetailsController'
-        })
+        });
 })
